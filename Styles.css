@@ -1,0 +1,260 @@
+body p{
+    margin-left: 0px; 
+    Padding-right: 110px;
+    Padding-left: 55px; 
+    
+}
+
+@font-face {
+    font-family: 'valkyrie-text';
+    src: url('path/to/valkyrie-text.woff2') format('woff2'),
+         url('path/to/valkyrie-text.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply font styles */
+body {
+    font-family: 'valkyrie-text', 'Montserrat', sans-serif; /* Use Valkyrie Text first, fall back to Montserrat, then sans-serif */
+    background-color: #181717; /* Charcoal Grey background */
+    color: #D3D3D3; /* Off-White text color */
+    line-height: 1.5; /* Line height for better readability */
+    font-size: 1.2 rem; /* Font size */
+    font-variant-numeric: oldstyle-nums; /* Oldstyle figures for numeric characters */
+}
+
+header {
+    background-color: #181717; /* Charcoal Grey background for header */
+}
+
+.header-content {
+    display: flex;
+    justify-content: flex-start; /* Distributes space between items */
+    align-items: center; /* Vertically centers items */
+    Padding-right: 30px;
+    Padding-left: 5px;
+}
+a {
+    text-decoration: none;
+    color: inherit; /* Optional: Inherit color from parent element */
+}
+
+a:hover {
+    color: #ffffff; /* Change color on hover if desired */
+}
+
+.header-name {
+    font-size: 13px; /* Larger font size for the name */
+    font-weight: 400; /* Bold weight for the name */
+    color: #DC143C; /* Crimson Red color for the name */
+    padding-right: 30px; /* Vertical and horizontal padding */
+    Padding-left: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-style: normal;
+      }
+
+
+
+.nav-right {
+     display: flex;
+    gap: 15px; /* Space between the nav items */
+    flex-grow: 1; /* Ensures the nav-right section takes up available space */
+    justify-content: center; /* Centers the navigation items */
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: #D3D3D3; /* Light Grey color for the links */
+    font-size: 16px;
+    font-weight: 400; /* Regular weight for the links */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-right a:hover {
+    text-decoration: none;
+    color: #B22222; /* Deep Red on hover */
+}
+
+
+html, body {
+    height: 100%; /* Ensure the body takes up the full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex; /* Enable Flexbox on the body */
+    flex-direction: column; /* Stack children vertically */
+}
+
+
+.page-wrapper {
+    flex: 1; /* Allow the main content to grow and push footer to the bottom */
+}
+
+header {
+    background-color: #1f1e1e; /* Charcoal Grey background for header */
+    padding: 10px 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Vertically centers items */
+}
+
+.header-name {
+    font-size: 20px; /* Larger font size for the name */
+    font-weight: 700; /* Bold weight for the name */
+    color: #DC143C; /* Crimson Red color for the name */
+    padding-left: 115px; /* Increased vertical and horizontal padding */
+    
+}
+
+.nav-right {
+    display: flex;
+    gap: 15px; /* Space between the nav items */
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: #D3D3D3; /* Light Grey color for the links */
+    font-size: 16px;
+    
+}
+
+.nav-right a:hover {
+    color: #B22222; /* Deep Red color on hover */
+}
+
+footer {
+    background-color: #181717; /* Charcoal Grey background */
+    color: #D3D3D3; /* Off-White text color */
+    padding: 0px; /* Vertical and horizontal padding */
+    text-align: center; /* Center align text */
+    border-top: 2px solid #DC143C; /* Crimson Red border on top */
+    margin-top: auto; /* Pushes the footer to the bottom of the page */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer-content {
+    max-width: 1200px; /* Limit width for better readability */
+    margin: 0 auto; /* Center align content horizontally */
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center; /* Center align navigation items */
+    gap: 15px; /* Space between navigation links */
+    margin-top: 10px; /* Space above the navigation */
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #D3D3D3; /* Light Grey color for the links */
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.footer-nav a:hover {
+    color: #B22222; /* Deep Red color on hover */
+}
+
+body h1 {
+
+    margin-bottom:5px; /* Space above the h1 element */
+    padding-top: 32px;
+    Padding-left: 55px; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 65;
+    color: #D3D3D3
+    
+}
+header {
+    position: fixed; /* Fix the header to the top of the page */
+    top: 0; /* Align the header to the top of the viewport */
+    left: 0; /* Align the header to the left of the viewport */
+    width: 100%; /* Make the header span the full width of the viewport */
+    background-color: #181717; /* Ensure the background color remains consistent */
+    z-index: 1000; /* Ensure the header is above other content */
+        box-shadow: 0 2px 4px rgba(0,0,0,0); /* Optional: Add a subtle shadow for visual separation */
+}
+
+/* Add some padding to the top of the body content to prevent it from hiding behind the fixed header */
+body {
+    padding-top: 60px; /* Adjust based on the height of your header */
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+/* Navigation items */
+.nav-right {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+}
+
+/* Search container */
+.search-container {
+    position: relative;
+    margin-left: auto;
+}
+
+/* Search input field */
+.search-input {
+    width: 0;
+    padding: 8px 12px;
+    border: 1px solid #D3D3D3;
+    border-radius: 4px;
+    outline: none;
+    transition: width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 0; /* Initially hidden */
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100%;
+}
+
+/* Search input field (expanded state) */
+.search-container.expanded .search-input {
+    width: 200px;
+    opacity: 1;
+    border-color: #B22222;
+}
+
+/* Search icon */
+.search-icon {
+    font-size: 16px;
+    color: #D3D3D3;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 65px ;
+}
+
+/* Header-specific styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #181717;
+    z-index: 1000;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Add padding to top of body content to prevent hiding behind fixed header */
+body {
+    padding-top: 60px;
+}
